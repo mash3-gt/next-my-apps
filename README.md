@@ -1,3 +1,32 @@
+## 初回セットアップ
+
+* Next.jsに従ってプロジェクト作成
+  * npx create-next-app@latest
+    * プロジェクト名：next-my-apps
+    * srcはありにした
+  * githubでレポジトリ作成
+    * next-my-apps
+  * ローカルのプロジェクトをリモートレポジトリにpush
+    * git remote add origin git@github.com:mash3-gt/next-my-apps.git
+    * git push -u origin main
+  * gh-pagesのセットアップ
+    * npm install gh-pages --save-dev
+    * next.config.jsにexport設定を追加
+      * nextConfigにoutput:'export'を追記する
+    * package.jsonの追加
+      *  "deploy": "gh-pages -d out"
+      *  "homepage": "https://(user name).github.io/(repository name)/"
+         *  gh-pagesを使ったデプロイ時に公開先となるURL
+ * tsのビルド
+   * npm run build
+     * outディレクトリができる
+ * github pagesへのデプロイ
+   * npm run deploy
+   * gh-pagesブランチがデプロイされる
+ * ページへアクセス
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
