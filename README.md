@@ -9,21 +9,13 @@
   * ローカルのプロジェクトをリモートレポジトリにpush
     * git remote add origin git@github.com:mash3-gt/next-my-apps.git
     * git push -u origin main
-  * gh-pagesのセットアップ
-    * npm install gh-pages --save-dev
-    * next.config.jsにexport設定を追加
-      * nextConfigにoutput:'export'を追記する
-    * package.jsonの追加
-      *  "deploy": "gh-pages -d out"
-      *  "homepage": "https://(user name).github.io/(repository name)/"
-         *  gh-pagesを使ったデプロイ時に公開先となるURL
- * tsのビルド
-   * npm run build
-     * outディレクトリができる
- * github pagesへのデプロイ
-   * npm run deploy
-   * gh-pagesブランチがデプロイされる
- * ページへアクセス
+  * githubのセットアップ
+    * https://dev.classmethod.jp/articles/github-pages-by-actions/
+  * next.config.jsにexport設定を追加
+    * nextConfigにoutput:'export'を追記する
+  * コミットすると自動デプロイされ、ページが見れる
+* 課題
+  * アイコンが出ない
 
 
 
